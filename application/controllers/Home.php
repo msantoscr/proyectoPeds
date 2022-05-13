@@ -10,6 +10,7 @@ class Home extends CI_Controller {
         
         $this->load->model('alumnos/Alumnos');
         $this->load->model('cursos/Cursos');
+		
 	}
 
 	
