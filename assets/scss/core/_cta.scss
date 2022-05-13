@@ -1,0 +1,162 @@
+/*================================================
+CTA CSS
+=================================================*/
+.cta-area {
+  position: relative;
+
+  .section-title-center {
+    .mt-16 {
+      margin-top: rem(32px);
+
+      @include md {
+        margin-top: rem(64px);
+      }
+    }
+  }
+
+  .shape7 {
+    @include absolute(top rem(-25px) left 10%);
+    @include size(rem(50px));
+    background-color: $red-700;
+    border-radius: 50%;
+
+    @include md {
+      @include size(rem(90px));
+    }
+  }
+
+  .shape8 {
+    @include absolute(top rem(-40px) right 10%);
+  }
+
+  .shape9 {
+    @include absolute(top rem(-26px) right 10%);
+    @include size(50px);
+    border: 2px solid $black;
+    background-color: #37bd8a;
+    transform: rotate(45deg);
+  }
+
+  .shape10 {
+    @include absolute(top rem(80px) right 12%);
+  }
+
+  .shape11 {
+    @include absolute(bottom 30% left 15%);
+  }
+
+  .shape12 {
+    @include absolute(bottom rem(-20px) left rem(48px));
+    @include size(40px);
+    z-index: 9;
+    border: 2px solid $black;
+    background-color: #efba34;
+    transform: rotate(45deg);
+
+    @include md {
+      bottom: rem(-38px);
+      @include size(72px);
+    }
+  }
+}
+
+.cta-area-two {
+  @include lg {
+    &.section-padding {
+      padding-top: rem(85px);
+      padding-bottom: rem(85px);
+    }
+  }
+
+  .section-title-center {
+    h2 {
+      font-size: rem(40px);
+    }
+  }
+}
+
+.cta-area-three {
+  background-color: rgba(#f2c94c, 20%);
+  height: 400px;
+  position: relative;
+  .bg-shapes {
+    .shape {
+      position: absolute;
+      z-index: -1;
+      &:nth-child(1) {
+        left: 0;
+        top: 68px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        right: 0;
+        bottom: 0px;
+        opacity: 40%;
+      }
+    }
+  }
+  .cta-round {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #263238;
+    transform: translateY(-200px);
+    margin: auto;
+    h3 {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 62px;
+      letter-spacing: 0.5px;
+      color: #fff;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 29px;
+      color: #fff;
+      margin: 2px 0 28px 0;
+      max-width: 397px;
+    }
+    .btn {
+      border-color: #333333;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: $inter;
+      background-color: #fff;
+    }
+  }
+}
+
+.cta-area-four {
+  background-color: rgba(#515dc3, 10%);
+  position: relative;
+  overflow: hidden;
+  .bg-shape {
+    .shape {
+      position: absolute;
+      z-index: -1;
+      &:nth-child(1) {
+        right: 110px;
+        bottom: -16px;
+      }
+
+      &:nth-child(2) {
+        left: 118px;
+        bottom: -1px;
+      }
+    }
+  }
+  .btn {
+    background-color: #515dc3;
+    &:hover {
+      background-color: $black;
+      color: #515dc3;
+    }
+  }
+}

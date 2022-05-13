@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^fimpes\.digital$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.fimpes\.digital$
+RewriteRule ^/?$ "https\:\/\/fimpes\.digital\/" [R=301,L]
+

@@ -1,0 +1,141 @@
+/*================================================
+FAQs CSS
+=================================================*/
+.faq-area {
+  padding-top: rem(70px);
+  padding-bottom: rem(70px);
+
+  @include lg {
+    padding-top: rem(140px);
+    padding-bottom: rem(125px);
+
+    &.pricing-faq {
+      padding-top: rem(70px);
+      padding-bottom: rem(140px);
+    }
+
+    &.help-center-faq {
+      padding-top: rem(130px);
+    }
+  }
+
+  .section-title-center {
+    padding-bottom: rem(72px);
+  }
+
+  .accordion-item {
+    .accordion-button {
+      border-radius: 10px;
+    }
+  }
+}
+.faq-area-two {
+  padding: 170px 0 370px 0;
+  position: relative;
+  z-index: 1;
+  .bg-shapes {
+    .shape {
+      position: absolute;
+      z-index: -1;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        right: 0;
+      }
+      &:nth-child(1) {
+        bottom: 392px;
+      }
+      &:nth-child(2) {
+        bottom: 248px;
+      }
+      &:nth-child(3) {
+        bottom: 260px;
+      }
+      &:nth-child(4) {
+        right: 147px;
+        top: 215px;
+      }
+      &:nth-child(5) {
+        left: 61px;
+        bottom: 516px;
+      }
+    }
+  }
+}
+
+.faq-area-three {
+  position: relative;
+  padding-bottom: 216px;
+  padding-top: 229px;
+  z-index: 1;
+
+  .faq-tab-wrapper .tab-pane {
+    padding-top: 0;
+  }
+  .faq-tab-wrapper .nav-tabs {
+    margin: 0 0 65px;
+    border: none;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-item {
+    margin: 10px 0 0;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-link {
+    border: none;
+    line-height: 32px;
+    border-radius: 3px;
+    padding: 0 18px;
+    color: #989898;
+    font-size: 17px;
+    margin: 0 10px;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(1) .nav-link {
+    background: #f4f3ff;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(2) .nav-link {
+    background: #ffeeee;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(3) .nav-link {
+    background: #f3ffed;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(4) .nav-link {
+    background: #edf3ff;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(5) .nav-link {
+    background: #fdf9e9;
+  }
+  .faq-tab-wrapper .nav-tabs li:nth-child(6) .nav-link {
+    background: #e6fafd;
+  }
+  .faq-tab-wrapper .nav-tabs .nav-item.show .nav-link,
+  .faq-tab-wrapper .nav-tabs .nav-link.active {
+    background: #22d4ab !important;
+    color: #fff;
+  }
+
+  .bg-shape {
+    .shape {
+      position: absolute;
+      z-index: -1;
+      &:nth-child(1) {
+        top: 80px;
+        right: 0;
+      }
+      &:nth-child(2) {
+        top: 750px;
+        left: 10%;
+      }
+      &:nth-child(3) {
+        top: 450px;
+        left: 15%;
+      }
+    }
+  }
+  .section-title-center {
+    p {
+      width: 49%;
+    }
+    padding-bottom: 60px;
+  }
+}
